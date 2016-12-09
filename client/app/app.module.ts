@@ -4,10 +4,14 @@ import { AppComponent } from './app.component';
 import { FotoModule } from './foto/foto.module';
 import { HttpModule } from '@angular/http';
 import 'rxjs/add/operator/map';
+import { PainelModule } from './painel/painel.module';
+import { CadastroComponent } from './cadastro/cadastro.component';
+import { ListagemComponent } from './listagem/listagem.component';
+import { routing } from './app.routes';
 
 @NgModule({
-    imports: [ BrowserModule, FotoModule, HttpModule],
-    declarations: [AppComponent],
+    imports: [ BrowserModule, FotoModule, HttpModule, PainelModule, routing],
+    declarations: [ AppComponent, ListagemComponent, CadastroComponent ],
     bootstrap: [ AppComponent ]
 })
 
