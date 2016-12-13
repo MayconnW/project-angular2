@@ -9,9 +9,10 @@ import { CadastroComponent } from './cadastro/cadastro.component';
 import { ListagemComponent } from './listagem/listagem.component';
 import { routing } from './app.routes';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BotaoModule } from './botao/botao.module';
 
 @NgModule({
-    imports: [ BrowserModule, FotoModule, HttpModule, PainelModule, routing, FormsModule, ReactiveFormsModule],
+    imports: [ AppComponent, BrowserModule, FotoModule, HttpModule, PainelModule, routing, FormsModule, ReactiveFormsModule, BotaoModule],
     declarations: [ AppComponent, ListagemComponent, CadastroComponent ],
     bootstrap: [ AppComponent ]
 })
